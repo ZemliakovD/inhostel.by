@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Аренда комнаты на сутки | Хостел в Минске</title>
+  <link rel="icon" href="img/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-lightbox.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="col-12">
+      <div class="row">
+        <header class="header">
+          <div class="header-inner">
+            <nav class="navbar bg-body-tertiary fixed-top header-nav">
+              <div class="container-fluid">
+                <header class="menu">
+                  <div class="menu-left">
+                    <div class="logo">
+                      <a href="#" class="logo-link">
+                        <img src="img/logo.png" alt="Логотип">
+                        <p><span>in</span>hostel.by</p>
+                      </a>
+                    </div>
+                    <div class="location">
+                      <img src="img/icon/map-locator.png" alt="Местоположение">
+                      <p>Минск</p>
+                    </div>
+                    <button class="catalog-button button" id="catalog-pup">Каталог</button>
+                  </div>
+                  <div class="menu-right">
+                    <a href="#" id="faq">Частые вопросы</a>
+                    <a href="#" id="friends">Сотрудничество</a>
+                    <a href="tel:+375291111111" class="menu-phone">+375 (29) 111-11-11</a>
+                  </div>
+                </header>
+                <button class="navbar-toggler header-nav-toggle" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon header-toggle-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <div class="logo">
+                      <a href="#" class="logo-link">
+                        <img src="img/logo.png" alt="Логотип">
+                        <p>inhostel.by</p>
+                      </a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <div class="location">
+                          <img src="img/icon/map-locator.png" alt="Местоположение">
+                          <p>Минск</p>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Частные вопросы</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Сотруничество</a>
+                      </li>
+                      <li class="nav-item nav-item-phone">
+                        <button class="catalog-button button" id="catalog-pup">Каталог</button>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 popup-menu">
+                      <li class="nav-item nav-item-phone">
+                        <a class="nav-link phone-link" href="tel:+375291111111">+375 (29) 111-11-11</a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="social-inner">
+                          <a href="https://www.youtube.com/"><img src="img/icon/logo_youtube.png" alt="youtube"></a>
+                          <a href="https://www.instagram.com/"><img src="img/icon/logo_instagram.png" alt="instagram"></a>
+                          <a href="https://vk.com/"><img src="img/icon/logo_vk.png" alt="vk"></a>
+                          <a href="https://www.viber.com/ru/"><img src="img/icon/viber.png" alt="viber"></a>
+                          <a href="https://web.telegram.org/k/"><img src="img/icon/telegram.png" alt="telegram"></a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section class="main">
+          <div class="col-12">
+            <div class="row">
+              <div class="container">
+                <div class="main-inner">
+                  <div class="main-content">
+                    <h1>Аренда комнаты <br /> на сутки в Минске</h1>
+                    <p>Найдите идеальный вариант сами или предоставьте это нам</p>
+                    <p>Давайте Вам что-нибудь подберем</p>
+                    <div class="main-slide-inner">
+                      <div class="main-slider">
+                        <div class="main-slider-item">
+                          <img src="img/photo_1.png" alt="Коттедж">
+                        </div>
+                        <div class="main-slider-item">
+                          <img src="img/photo_2.png" alt="Коттедж">
+                        </div>
+                        <div class="main-slider-item">
+                          <img src="img/photo_3.png" alt="Коттедж">
+                        </div>
+                        <div class="main-slider-item">
+                          <img src="img/photo_4.png" alt="Коттедж">
+                        </div>
+                        <div class="main-slider-item">
+                          <img src="img/photo_5.png" alt="Коттедж">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="mobile-order">Заявка на подбор</button>
+                  </div>
+                  <div class="main-contact">
+                    <form class="contact-form">
+                      <div class="contact-form-inner">
+                        <p>Найдите подходящее предолжение</p>
+                        <div class="counter">
+                          <div class="counter-left">
+                            <label for="count-in" class="form-label">Въезд</label>
+                            <input type="date" class="counter-in" id="count-in" placeholder="От">
+                          </div>
+                          <div class="couter-right">
+                            <label for="count-out" class="form-label">Выезд</label>
+                            <input type="date" class="counter-out" id="count-out" placeholder="До">
+                          </div>
+                        </div>
+                        <label for="guestCount" class="form-label">Количество человек:</label>
+                        <input type="text" id="guestCount" placeholder="Укажите количество гостей">
+                        <button class="main-form-button">Забронировать</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="social">
+          <div class="col-12">
+            <div class="row">
+              <div class="container">
+                <div class="social-inner">
+                  <a href="https://www.youtube.com/"><img src="img/icon/logo_youtube.png" alt="youtube"></a>
+                  <a href="https://www.instagram.com/"><img src="img/icon/logo_instagram.png" alt="instagram"></a>
+                  <a href="https://vk.com/"><img src="img/icon/logo_vk.png" alt="vk"></a>
+                  <a href="https://www.viber.com/ru/"><img src="img/icon/viber.png" alt="viber"></a>
+                  <a href="https://web.telegram.org/k/"><img src="img/icon/telegram.png" alt="telegram"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="together">
+    <section class="about">
+      <div class="col-12">
+        <div class="row">
+          <div class="container">
+            <div class="about-inner">
+              <h2>О нас</h2>
+              <div class="about-content">
+                <div class="about-card">
+                  <img src="img/icon/about_1.png" alt="Работа">
+                  <p>Работаем с юридическими и физическими лицами</p>
+                </div>
+                <div class="about-card">
+                  <img src="img/icon/about_2.png" alt="Подбор">
+                  <p>Бесплатный подбор, честные консультации и открытость к сотрудничеству</p>
+                </div>
+                <div class="about-card">
+                  <img src="img/icon/about_3.png" alt="Время">
+                  <p>Работаем с 2014 года. Консультируем 30-80 человек в сутки, заселяем от 3 до 5 компаний в день.
+                    Помогли более 21 000 клиентам</p>
+                </div>
+                <div class="about-card">
+                  <img src="img/icon/about_4.png" alt="Рейтинг">
+                  <p>Средний рейтинг компании 4,5 из 5 (Яндекс, Google)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="col-12">
+        <div class="row">
+          <div class="container">
+            <div class="catalog-inner">
+              <h2>Популярное в каталоге</h2>
+              <div class="catalog-content">
+                <div class="catalog-card">
+                  <div class="card-top">
+                    <div class="card-container">
+                      <img class="card-photo" src="img/catalog/home_1.jpg" alt="Дом на сутки">
+                      <div class="people">
+                        <img src="img/icon/people.png" alt="Количество">
+                        <p>до 30</p>
+                      </div>
+                      <div class="zoom">
+                        <img src="img/icon/zoom.png" alt="Увеличить">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-container">
+                      <h3>Новая сосновка</h3>
+                      <div class="list">
+                        <div class="list-item">
+                          <img src="img/icon/catalog_1.png" alt="Места">
+                          <p>5 спальных мест</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_2.png" alt="Развлечение">
+                          <p>Настольный теннис</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_3.png" alt="Баня">
+                          <p>Баня</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_4.png" alt="Вода">
+                          <p>Бассейн</p>
+                        </div>
+                      </div>
+                      <div class="card-order">
+                        <p>от 50$ / сутки</p>
+                        <button class="order-button">Забронировать</button>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card">
+                  <div class="card-top">
+                    <div class="card-container">
+                      <img class="card-photo" src="img/catalog/home_2.jpg" alt="Дом на сутки">
+                      <div class="people">
+                        <img src="img/icon/people.png" alt="Количество">
+                        <p>до 30</p>
+                      </div>
+                      <div class="zoom">
+                        <img src="img/icon/zoom.png" alt="Увеличить">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-container">
+                      <h3>Новая сосновка</h3>
+                      <div class="list">
+                        <div class="list-item">
+                          <img src="img/icon/catalog_1.png" alt="Места">
+                          <p>5 спальных мест</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_2.png" alt="Развлечение">
+                          <p>Настольный теннис</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_3.png" alt="Баня">
+                          <p>Баня</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_4.png" alt="Вода">
+                          <p>Бассейн</p>
+                        </div>
+                      </div>
+                      <div class="card-order">
+                        <p>от 50$ / сутки</p>
+                        <button class="order-button">Забронировать</button>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card">
+                  <div class="card-top">
+                    <div class="card-container">
+                      <img class="card-photo" src="img/catalog/home_3.jpg" alt="Дом на сутки">
+                      <div class="people">
+                        <img src="img/icon/people.png" alt="Количество">
+                        <p>до 30</p>
+                      </div>
+                      <div class="zoom">
+                        <img src="img/icon/zoom.png" alt="Увеличить">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-container">
+                      <h3>Новая сосновка</h3>
+                      <div class="list">
+                        <div class="list-item">
+                          <img src="img/icon/catalog_1.png" alt="Места">
+                          <p>5 спальных мест</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_2.png" alt="Развлечение">
+                          <p>Настольный теннис</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_3.png" alt="Баня">
+                          <p>Баня</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_4.png" alt="Вода">
+                          <p>Бассейн</p>
+                        </div>
+                      </div>
+                      <div class="card-order">
+                        <p>от 50$ / сутки</p>
+                        <button class="order-button">Забронировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card">
+                  <div class="card-top">
+                    <div class="card-container">
+                      <img class="card-photo" src="img/catalog/home_4.jpg" alt="Дом на сутки">
+                      <div class="people">
+                        <img src="img/icon/people.png" alt="Количество">
+                        <p>до 30</p>
+                      </div>
+                      <div class="zoom">
+                        <img src="img/icon/zoom.png" alt="Увеличить">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-container">
+                      <h3>Новая сосновка</h3>
+                      <div class="list">
+                        <div class="list-item">
+                          <img src="img/icon/catalog_1.png" alt="Места">
+                          <p>5 спальных мест</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_2.png" alt="Развлечение">
+                          <p>Настольный теннис</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_3.png" alt="Баня">
+                          <p>Баня</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_4.png" alt="Вода">
+                          <p>Бассейн</p>
+                        </div>
+                      </div>
+                      <div class="card-order">
+                        <p>от 50$ / сутки</p>
+                        <button class="order-button">Забронировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card">
+                  <div class="card-top">
+                    <div class="card-container">
+                      <img class="card-photo" src="img/catalog/home_5.jpg" alt="Дом на сутки">
+                      <div class="people">
+                        <img src="img/icon/people.png" alt="Количество">
+                        <p>до 30</p>
+                      </div>
+                      <div class="zoom">
+                        <img src="img/icon/zoom.png" alt="Увеличить">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-container">
+                      <h3>Новая сосновка</h3>
+                      <div class="list">
+                        <div class="list-item">
+                          <img src="img/icon/catalog_1.png" alt="Места">
+                          <p>5 спальных мест</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_2.png" alt="Развлечение">
+                          <p>Настольный теннис</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_3.png" alt="Баня">
+                          <p>Баня</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_4.png" alt="Вода">
+                          <p>Бассейн</p>
+                        </div>
+                      </div>
+                      <div class="card-order">
+                        <p>от 50$ / сутки</p>
+                        <button class="order-button">Забронировать</button>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card">
+                  <div class="card-top">
+                    <div class="card-container">
+                      <img class="card-photo" src="img/catalog/home_6.jpg" alt="Дом на сутки">
+                      <div class="people">
+                        <img src="img/icon/people.png" alt="Количество">
+                        <p>до 30</p>
+                      </div>
+                      <div class="zoom">
+                        <img src="img/icon/zoom.png" alt="Увеличить">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-container">
+                      <h3>Новая сосновка</h3>
+                      <div class="list">
+                        <div class="list-item">
+                          <img src="img/icon/catalog_1.png" alt="Места">
+                          <p>5 спальных мест</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_2.png" alt="Развлечение">
+                          <p>Настольный теннис</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_3.png" alt="Баня">
+                          <p>Баня</p>
+                        </div>
+                        <div class="list-item">
+                          <img src="img/icon/catalog_4.png" alt="Вода">
+                          <p>Бассейн</p>
+                        </div>
+                      </div>
+                      <div class="card-order">
+                        <p>от 50$ / сутки</p>
+                        <button class="order-button">Забронировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popular-button">Полный каталог</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="more">
+    <div class="col-12">
+      <div class="row">
+        <div class="container">
+          <div class="more-inner">
+            <h2>Можем организовать для Вас</h2>
+            <div class="more-content">
+              <div class="more-item">
+                <div class="more-item-inner">
+                  <img src="img/icon/more_1.png" alt="Еда">
+                  <p>Кейтеринг</p>
+                </div>
+              </div>
+              <div class="more-item">
+                <div class="more-item-inner">
+                  <img src="img/icon/more_2.png" alt="Еда">
+                  <p>Выездной повар</p>
+                </div>
+              </div>
+              <div class="more-item">
+                <div class="more-item-inner">
+                  <img src="img/icon/more_3.png" alt="Еда">
+                  <p>Фуршет</p>
+                </div>
+              </div>
+              <div class="more-item">
+                <div class="more-item-inner">
+                  <img src="img/icon/more_4.png" alt="Еда">
+                  <p>Шоу программа</p>
+                </div>
+              </div>
+              <div class="more-item">
+                <div class="more-item-inner">
+                  <img src="img/icon/more_5.png" alt="Еда">
+                  <p>Трансфер</p>
+                </div>
+              </div>
+              <div class="more-item">
+                <div class="more-item-inner">
+                  <img src="img/icon/more_6.png" alt="Еда">
+                  <p>Мероприятия под ключ</p>
+                </div>
+              </div>
+            </div>
+            <button class="more-button">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq">
+    <div class="col-12">
+      <div class="row">
+        <div class="container">
+          <div class="faq-inner">
+            <h2>Частые вопросы</h2>
+            <div class="faq-content">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Элемент аккордеона #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                     <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                      свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                      элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                      переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                      переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                      <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Элемент аккордеона #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Элемент аккордеона #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                      Элемент аккордеона #4
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                      Элемент аккордеона #5
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                      Элемент аккордеона #6
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                      Элемент аккордеона #7
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="col-12">
+      <div class="row">
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-content">
+              <h2>Хотите сдать дом?</h2>
+              <p>Оставьте заявку и мы свяжемся с вами для уточнения деталей</p>
+              <button class="footer-button">Оставить заявку</button>
+            </div>
+            <button class="footer-button">Оставить заявку</button>
+          </div>
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="footer-botom-inner">
+                <div class="footer-logo">
+                  <a href="#">
+                    <img src="img/logo.png" alt="Логотип">
+                    <p><span>in</span>hostel.by</p>
+                  </a>
+                  <p>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                  </p>
+                  <p>
+                    <a href="#" class="policy">Согласие на обработку персональных данных</a>
+                  </p>
+                </div>
+                <div class="footer-middle">
+                  <div class="footer-catalog">
+                    <ul>
+                      <li>
+                        <div class="location">
+                          <img src="img/icon/map-locator.png" alt="Местоположение">
+                          <p>Минск</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-point">
+                    <ul>
+                      <li><a href="#" id="friends-foot">Сотрудничество</a></li>
+                      <li><a href="#" id="faq-foot">Частые вопросы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-right">
+                  <a href="tel:+375291234567" class="footer-phone">+375 (29) 123-45-67</a>
+                  <div class="footer-social">
+                    <a href="https://www.youtube.com/"><img src="img/icon/logo_youtube.png" alt="youtube"></a>
+                    <a href="https://www.instagram.com/"><img src="img/icon/logo_instagram.png" alt="instagram"></a>
+                    <a href="https://vk.com/"><img src="img/icon/logo_vk.png" alt="vk"></a>
+                    <a href="https://www.viber.com/ru/"><img src="img/icon/viber.png" alt="viber"></a>
+                    <a href="https://web.telegram.org/k/"><img src="img/icon/telegram.png" alt="telegram"></a>
+                  </div>
+                  <div class="footer-policy">
+                    <p>
+                      <a href="#" class="policy">Политика конфиденциальности</a>
+                    </p>
+                    <p>
+                      <a href="#" class="policy">Согласие на обработку персональных данных</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-lightbox.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
