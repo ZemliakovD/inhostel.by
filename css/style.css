@@ -755,7 +755,15 @@ h2{
     display: none;
 }
 
+.footer-map{
+    display: none;
+}
+
 @media (max-width: 575.98px) {
+
+    body{
+        overflow-x: hidden;
+    }
 
     .container{
         padding-left: 20px;
@@ -842,7 +850,16 @@ h2{
     }
 
     .contact-form{
-        display: none;
+        display: block;
+        width: 100%;
+    }
+
+    .counter input{
+        width: 50%;
+    }
+
+    .main-form-button{
+        padding: 12px 70px;
     }
 
     .social-inner{
@@ -850,8 +867,7 @@ h2{
     }
 
     .mobile-order{
-        display: inline-block;
-        border: 1px solid transparent;
+        display: none;
     }
 
     .main-content p:nth-child(2){
@@ -910,7 +926,8 @@ h2{
     }
 
     .main-contact{
-        display: none;
+        display: block;
+        width: 100%;
     }
 
     .social{
@@ -923,6 +940,7 @@ h2{
 
     .about{
         margin-bottom: 95px;
+        display: none;
     }
 
     h2{
@@ -1021,6 +1039,7 @@ h2{
 
     .more{
         margin-bottom: 90px;
+        display: none;
     }
 
     .more-inner h2{
@@ -1211,6 +1230,10 @@ h2{
         font-weight: 500;
         line-height: 150%;
         color: #404256;
+    }
+
+    .footer-map{
+        display: block;
     }
 
 
